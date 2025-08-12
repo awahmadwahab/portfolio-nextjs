@@ -4,7 +4,7 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <div className="h-auto md:h-[40rem] w-full rounded-md flex flex-col items-center justify-center relative mx-auto overflow-hidden">
+    <div className="h-auto md:h-[45rem] w-full rounded-md flex flex-col items-center justify-center relative mx-auto overflow-hidden">
       <div className="p-4 relative z-10 text-center w-full">
         <h1 className="mt-30 md:mt-0 text-4xl md:text-6xl font-bold  bg-clip-text text-transparent bg-gradient-to-b from bg-neutral-50 to-neutral-400 ">
           Clean Cuts. Clear Stories.

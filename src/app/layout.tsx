@@ -5,8 +5,19 @@ import Navbar from "@/components/Navbar";
 
 
 export const metadata: Metadata = {
-  title: "AWXVISION | Freelance Video Editor & Visual Storyteller",
-  description: "AWXVISION is a professional video editing portfolio showcasing cinematic cuts, storytelling, and branded content for creators, businesses, and filmmakers.",
+  title: "AWXVISION | Freelance Video Editor | Clean Cuts & Clear Stories",
+  description: "I'm AWXVISION, a freelance video editor helping creators, brands, and filmmakers transform raw footage into polished, impactful videos that engage and inspire audiences.",
+  keywords: [
+    "Freelance Video Editor",
+    "Video Editing",
+    "Video Production",
+    "Content Creation",
+    "Filmmaking",
+    "Video Marketing",
+    "Video Storytelling",
+    "Post-Production",
+    "Creative Video Solutions"
+  ]
 };
 
 
