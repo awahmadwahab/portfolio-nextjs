@@ -73,10 +73,10 @@ const Footer = () => {
         {/* Main content */}
         <div className="text-center mb-8">
           <h3 className="text-2xl font-bold text-white mb-4">
-            Let's Create Something Amazing Together
+            Let&apos;s Create Something Amazing Together
           </h3>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Ready to bring your vision to life? Get in touch and let's discuss your next video project.
+            Ready to bring your vision to life? Get in touch and let&apos;s discuss your next video project.
           </p>
         </div>
 
