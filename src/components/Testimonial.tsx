@@ -30,7 +30,7 @@ const Testimonial = () => {
       <InfiniteMovingCards
         items={testimonials}
         direction="right"
-        speed="fast"
+        speed="normal"
       />
     </section>
   )

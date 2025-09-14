@@ -1,5 +1,6 @@
 import HeroSection from '@/components/HeroSection'
 import Services from '@/components/Services'
+import Portfolio from '@/components/Portfolio'
 import Testimonial from '@/components/Testimonial'
 import Footer from '@/components/Footer'
 import { Spotlight } from '@/components/ui/Spotlight'
@@ -20,6 +21,9 @@ const page = () => {
         <Services />
       </section>
       <section id="portfolio" className="scroll-mt-28 md:scroll-mt-32">
+        <Portfolio />
+      </section>
+      <section id="testimonial" className="scroll-mt-28 md:scroll-mt-32">
         <Testimonial />
       </section>
       <Footer />

@@ -29,6 +29,11 @@ const Navbar = ({ className }: { className?: string }) => {
         </MenuItem>
         </div>
         
+        <div onClick={() => scrollToSection('portfolio')} className="cursor-pointer">
+        <MenuItem setActive={setActive} active={active} item="Portfolio">
+        </MenuItem>
+        </div>
+        
         <div onClick={() => scrollToSection('testimonial')} className="cursor-pointer">
          <MenuItem setActive={setActive} active={active} item="Testimonial">
         </MenuItem>
