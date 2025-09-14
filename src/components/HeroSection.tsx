@@ -4,9 +4,9 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <div className="h-auto md:h-[45rem] w-full rounded-md flex flex-col items-center justify-center relative mx-auto overflow-hidden">
+  <div id="home" className="mt-12 md:mt-16 h-auto md:h-[45rem] w-full rounded-md flex flex-col items-center justify-center relative mx-auto overflow-hidden">
       <div className="p-4 relative z-10 text-center w-full">
-        <h1 className="mt-30 md:mt-0 text-4xl md:text-6xl font-bold  bg-clip-text text-transparent bg-gradient-to-b from bg-neutral-50 to-neutral-400 ">
+    <h1 className="mt-60 md:mt-0 text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
           Clean Cuts. Clear Stories.
         </h1>
         <p className="mt-4 font-normal max-w-lg leading-6 text-sm px-4 mx-auto md:text-md text-neutral-300">
@@ -27,8 +27,21 @@ const HeroSection = () => {
               </span>
             </button>
           </a>
+        <div className="mt-8">
+          <video 
+            className="w-[400px] h-[225px] object-cover rounded-2xl shadow-2xl mx-auto"
+            autoPlay
+            loop
+            muted
+            playsInline
+          >
+            <source src="https://res.cloudinary.com/dtbxufkdb/video/upload/v1757787559/TEST_eyvstd.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
+  </div>
       </div>
+      
     </div>
   );
 };

@@ -26,13 +26,13 @@ const Testimonial = () => {
     },
   ];
   return (
-    <div>
+    <section id="testimonial" className="scroll-mt-28 md:scroll-mt-36 py-6">
       <InfiniteMovingCards
         items={testimonials}
         direction="right"
-        speed="normal"
+        speed="fast"
       />
-    </div>
+    </section>
   )
 }
 
