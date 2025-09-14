@@ -13,7 +13,7 @@ const HeroSection = () => {
           I&apos;m a freelance video editor - helping creators, brands, and filmmakers
           turn raw footage into polished, impactful videos that connect with
           their audience.
-        </p>~
+        </p>
         <div className=" mt-20 ">
           <a
             href="https://www.instagram.com/awxvision/"
