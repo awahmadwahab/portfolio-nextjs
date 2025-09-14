@@ -10,7 +10,7 @@ const HeroSection = () => {
           Clean Cuts. Clear Stories.
         </h1>
         <p className="mt-4 font-normal max-w-lg leading-6 text-sm px-4 mx-auto md:text-md text-neutral-300">
-          I&apos;m a freelance video editor - helping creators, brands, and filmmakers
+          I&apos;m a freelance video editor  helping creators, brands, and filmmakers
           turn raw footage into polished, impactful videos that connect with
           their audience.
         </p>
