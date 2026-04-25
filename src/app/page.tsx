@@ -4,7 +4,6 @@ import Arsenal from '@/components/Arsenal'
 import Strategy from '@/components/Strategy'
 import VisualEngineering from '@/components/VisualEngineering'
 import Reels from '@/components/Reels'
-import Services from '@/components/Services'
 import TheProof from '@/components/TheProof'
 import TheVault from '@/components/TheVault'
 import ThePulse from '@/components/ThePulse'
@@ -19,7 +18,6 @@ export default function Home() {
       <HeroSection />
       <VisualEngineering />
       <Arsenal />
-      <Services />
       <Strategy />
       <Reels />
       <TheProof />
