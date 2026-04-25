@@ -1,48 +1,87 @@
-
+"use client";
 import React from "react";
-
+import { Spotlight } from "./ui/Spotlight";
+import { Button } from "./ui/moving-border";
+import { TextGenerateEffect } from "./ui/text-generate-effect";
+import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
-  <div id="home" className="mt-12 md:mt-16 h-auto md:h-[45rem] w-full rounded-md flex flex-col items-center justify-center relative mx-auto overflow-hidden">
-      <div className="p-4 relative z-10 text-center w-full">
-    <h1 className="mt-60 md:mt-0 text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
-          Clean Cuts. Clear Stories.
-        </h1>
-        <p className="mt-4 font-normal max-w-lg leading-6 text-sm px-4 mx-auto md:text-md text-neutral-300">
-          I&apos;m a freelance video editor  helping creators, brands, and filmmakers
-          turn raw footage into polished, impactful videos that connect with
-          their audience.
-        </p>
-        <div className=" mt-20 ">
-          <a
-            href="https://www.instagram.com/awxvision/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-              <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-              <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-                LATEST WORK
-              </span>
-            </button>
-          </a>
-        <div className="mt-8">
-          <video 
-            className="w-[400px] h-[225px] object-cover rounded-2xl shadow-2xl mx-auto"
-            autoPlay
-            loop
-            muted
-            playsInline
-          >
-            <source src="https://res.cloudinary.com/dtbxufkdb/video/upload/v1757787559/TEST_eyvstd.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-  </div>
+    <section id="home" className="min-h-screen w-full flex flex-col items-center justify-center pt-40 pb-20 relative overflow-hidden bg-[#050505] selection:bg-[#C9A96E] selection:text-black">
+      {/* Simple Background with Spotlight */}
+      <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_-20%,#1a1a1a,transparent_70%)] opacity-50" />
       </div>
+
+      <Spotlight className="-top-40 left-0 md:left-60 md:-top-20 z-10" fill="#C9A96E" />
       
-    </div>
+      <div className="p-4 relative z-20 text-center w-full max-w-5xl mx-auto flex flex-col items-center justify-center">
+        <div className="mb-6 max-w-4xl">
+          <TextGenerateEffect 
+            words="Visuals Engineered for Tech & SaaS." 
+            className="text-5xl md:text-7xl font-bold text-center text-white tracking-tighter" 
+          />
+        </div>
+        
+        <motion.p 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1.2, ease: [0.16, 1, 0.3, 1] }}
+          className="max-w-2xl mx-auto text-center text-neutral-400 text-lg md:text-xl font-normal leading-relaxed mb-12"
+        >
+          I combine computer science logic with cinematic color theory to build high-retention video assets that convert viewers into users.
+        </motion.p>
+        
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1.6, ease: [0.16, 1, 0.3, 1] }}
+          className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12"
+        >
+          <Button
+            borderRadius="1.75rem"
+            className="bg-[#050505] text-white border-neutral-800 text-sm md:text-base font-semibold tracking-wide hover:bg-[#111] transition-all hover:scale-105 hover:shadow-[0_0_30px_rgba(201,169,110,0.3)]"
+            borderClassName="bg-[radial-gradient(#C9A96E_40%,transparent_60%)] opacity-[0.8]"
+          >
+            Claim Your Visual Audit
+          </Button>
+          
+          <a 
+            href="#science" 
+            className="px-8 py-4 rounded-full bg-transparent border border-neutral-700 text-white hover:border-[#C9A96E] hover:text-[#C9A96E] transition-all text-sm md:text-base font-semibold"
+          >
+            See The Proof
+          </a>
+        </motion.div>
+
+        {/* Small 1920x1080 Video Box at Bottom */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9, y: 40 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 1, delay: 2, ease: [0.16, 1, 0.3, 1] }}
+          className="relative group cursor-pointer"
+        >
+          <div className="absolute -inset-1 bg-gradient-to-r from-[#C9A96E]/20 to-transparent rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition duration-1000 group-hover:duration-200" />
+          <div className="relative w-[320px] md:w-[480px] aspect-video rounded-xl overflow-hidden border border-neutral-800 shadow-2xl bg-black">
+            <video 
+              autoPlay 
+              loop 
+              muted 
+              playsInline 
+              preload="auto"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            >
+              <source src="https://res.cloudinary.com/dtbxufkdb/video/upload/v1757787559/TEST_eyvstd.mp4" type="video/mp4" />
+            </video>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <div className="absolute bottom-3 left-3 flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="w-2 h-2 rounded-full bg-[#C9A96E] animate-pulse" />
+              <span className="text-[10px] font-bold text-white tracking-[0.2em] uppercase">Visual Reel</span>
+            </div>
+          </div>
+        </motion.div>
+      </div>
+    </section>
   );
 };
 

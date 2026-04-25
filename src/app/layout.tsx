@@ -1,25 +1,13 @@
 import type { Metadata } from "next";
-
+import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
 
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "AWXVISION | Freelance Video Editor | Clean Cuts & Clear Stories",
-  description: "I'm AWXVISION, a freelance video editor helping creators, brands, and filmmakers transform raw footage into polished, impactful videos that engage and inspire audiences.",
-  keywords: [
-    "Freelance Video Editor",
-    "Video Editing",
-    "Video Production",
-    "Content Creation",
-    "Filmmaking",
-    "Video Marketing",
-    "Video Storytelling",
-    "Post-Production",
-    "Creative Video Solutions"
-  ]
+  title: "AWX Vision | Visual Engineering for Tech Brands",
+  description: "Where computer science meets cinematic storytelling. We combine precise color grading, minimal motion design, and algorithmic pacing to build premium visual identities.",
 };
-
 
 export default function RootLayout({
   children,
@@ -27,11 +15,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
-      <body>
-        <div className="relative w-full flex  items-center justify-center">
-        <Navbar />
-        </div>
+    <html lang="en" className="dark scroll-smooth">
+      <body className={`${inter.className} bg-[#050505] text-white antialiased selection:bg-[#D4AF37] selection:text-black`}>
         {children}
       </body>
     </html>

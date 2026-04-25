@@ -1,34 +1,25 @@
+import Navbar from '@/components/Navbar'
 import HeroSection from '@/components/HeroSection'
-import Services from '@/components/Services'
-import Portfolio from '@/components/Portfolio'
-import Testimonial from '@/components/Testimonial'
+import Arsenal from '@/components/Arsenal'
+import Strategy from '@/components/Strategy'
+import TheProof from '@/components/TheProof'
+import TheVault from '@/components/TheVault'
+import ThePulse from '@/components/ThePulse'
+import TheCloser from '@/components/TheCloser'
 import Footer from '@/components/Footer'
-import { Spotlight } from '@/components/ui/Spotlight'
-import React from 'react'
 
-const page = () => {
+export default function Home() {
   return (
-    
-    <div className=" font-bold text-2xl">
-       <Spotlight
-        className="-top-80 left-0 md:-top-80 md:left-60"
-        fill="#ffc300"
-      />
-      <section id="home" className="scroll-mt-28 md:scroll-mt-32">
-        <HeroSection />
-      </section>
-      <section id="services" className="scroll-mt-28 md:scroll-mt-32">
-        <Services />
-      </section>
-      <section id="portfolio" className="scroll-mt-28 md:scroll-mt-32">
-        <Portfolio />
-      </section>
-      <section id="testimonial" className="scroll-mt-28 md:scroll-mt-32">
-        <Testimonial />
-      </section>
+    <main className="min-h-screen bg-[#050505] text-white selection:bg-[#C9A96E] selection:text-black font-sans scroll-smooth">
+      <Navbar />
+      <HeroSection />
+      <Arsenal />
+      <Strategy />
+      <TheProof />
+      <TheVault />
+      <ThePulse />
+      <TheCloser />
       <Footer />
-    </div>
+    </main>
   )
 }
-
-export default page
