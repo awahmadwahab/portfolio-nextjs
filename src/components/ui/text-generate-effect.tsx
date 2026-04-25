@@ -29,7 +29,6 @@ export const TextGenerateEffect = ({
         delay: stagger(0.2),
       }
     );
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [scope.current]);
 
   const renderWords = () => {

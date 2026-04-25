@@ -59,7 +59,6 @@ export const Header = ({ translate, titleComponent }: { translate: any; titleCom
   return (
     <motion.div
       style={{
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         translateY: translate, 
       }}
       className="div max-w-5xl mx-auto text-center"

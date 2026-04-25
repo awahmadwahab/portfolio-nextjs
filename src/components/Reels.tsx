@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 import { TracingBeam } from "./ui/tracing-beam";
 import { IconX } from "@tabler/icons-react";
 import { cn } from "@/utils/cn";
@@ -65,9 +66,11 @@ const RecentExecutions = () => {
                 )}
                 onClick={() => setActiveVideo(project.video)}
               >
-                <img
+                <Image
                   src={project.image}
                   alt={project.title}
+                  width={800}
+                  height={600}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 {/* Ultra clean gradient overlay that only shows on hover */}

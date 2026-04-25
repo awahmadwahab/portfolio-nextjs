@@ -1,6 +1,6 @@
-/* eslint-disable */
 "use client";
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 import { animate, motion } from "motion/react";
 import { cn } from "@/utils/cn";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
@@ -46,7 +46,7 @@ export const TechStack = () => {
                 rotateZ={-5}
                 className="w-full mt-8"
               >
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1536240478700-b869070f9279?q=80&w=1000&auto=format&fit=crop"
                   height="1000"
                   width="1000"
@@ -97,22 +97,22 @@ export const TechStack = () => {
 };
 
 const Skeleton = () => {
-  const scale = [1, 1.1, 1];
-  const transform = ["translateY(0px)", "translateY(-4px)", "translateY(0px)"];
-  const sequence = [
-    [".circle-1", { scale, transform }, { duration: 0.8 }],
-    [".circle-2", { scale, transform }, { duration: 0.8 }],
-    [".circle-3", { scale, transform }, { duration: 0.8 }],
-    [".circle-4", { scale, transform }, { duration: 0.8 }],
-    [".circle-5", { scale, transform }, { duration: 0.8 }],
-    [".circle-6", { scale, transform }, { duration: 0.8 }],
-  ];
-
   useEffect(() => {
+    const scale = [1, 1.1, 1];
+    const transform = ["translateY(0px)", "translateY(-4px)", "translateY(0px)"];
+    const sequence = [
+      [".circle-1", { scale, transform }, { duration: 0.8 }],
+      [".circle-2", { scale, transform }, { duration: 0.8 }],
+      [".circle-3", { scale, transform }, { duration: 0.8 }],
+      [".circle-4", { scale, transform }, { duration: 0.8 }],
+      [".circle-5", { scale, transform }, { duration: 0.8 }],
+      [".circle-6", { scale, transform }, { duration: 0.8 }],
+    ];
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     animate(sequence as any, {
       repeat: Infinity,
       repeatDelay: 1,
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } as any);
   }, []);
 
