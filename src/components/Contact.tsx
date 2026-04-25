@@ -9,8 +9,8 @@ const Contact = () => {
       
       <div className="relative z-10 max-w-xl w-full mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">Let's Scale Your Brand.</h2>
-          <p className="text-neutral-400 text-lg">Apply below to see if we're a good fit for your content engine.</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">Let&apos;s Scale Your Brand.</h2>
+          <p className="text-neutral-400 text-lg">Apply below to see if we&apos;re a good fit for your content engine.</p>
         </div>
 
         <div className="bg-[#0A0A0A] p-8 md:p-10 rounded-2xl border border-neutral-800 shadow-2xl backdrop-blur-sm">

@@ -38,16 +38,18 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 1.6, ease: [0.16, 1, 0.3, 1] }}
           className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12"
         >
-          <Button
-            borderRadius="1.75rem"
-            className="bg-[#050505] text-white border-neutral-800 text-sm md:text-base font-semibold tracking-wide hover:bg-[#111] transition-all hover:scale-105 hover:shadow-[0_0_30px_rgba(201,169,110,0.3)]"
-            borderClassName="bg-[radial-gradient(#C9A96E_40%,transparent_60%)] opacity-[0.8]"
-          >
-            Claim Your Visual Audit
-          </Button>
+          <a href="#apply">
+            <Button
+              borderRadius="1.75rem"
+              className="bg-[#050505] text-white border-neutral-800 text-sm md:text-base font-semibold tracking-wide hover:bg-[#111] transition-all hover:scale-105 hover:shadow-[0_0_30px_rgba(201,169,110,0.3)]"
+              borderClassName="bg-[radial-gradient(#C9A96E_40%,transparent_60%)] opacity-[0.8]"
+            >
+              Claim Your Visual Audit
+            </Button>
+          </a>
           
           <a 
-            href="#science" 
+            href="#portfolio" 
             className="px-8 py-4 rounded-full bg-transparent border border-neutral-700 text-white hover:border-[#C9A96E] hover:text-[#C9A96E] transition-all text-sm md:text-base font-semibold"
           >
             See The Proof

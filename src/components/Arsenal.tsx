@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef, useState } from "react";
-import { IconVideo, IconBrandJavascript, IconCamera, IconCode, IconPalette, IconApps } from "@tabler/icons-react";
+import { IconVideo, IconCamera, IconCode, IconPalette, IconApps } from "@tabler/icons-react";
 import { motion } from "framer-motion";
 
 const tools = [
